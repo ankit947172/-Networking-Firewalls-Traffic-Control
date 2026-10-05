@@ -1,0 +1,16 @@
+Mode: shape | limit: 256.000 kbit/s PER DIRECTION | burst: 3000 bytes
+UDP probes sent: 10 | delivered: 10 | echo replies: 10
+Left -> right: received=10 forwarded=10 IP-bytes=360 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=0 packets, max queue delay=0.000 ms
+Right -> left: received=10 forwarded=10 IP-bytes=360 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=0 packets, max queue delay=0.000 ms
+Elapsed: 0.018 s | average RTT: 0.036 ms | max RTT: 0.060 ms
+Namespace restored: yes | timeout: no | interrupted: no
+Mode: shape | limit: 256.000 kbit/s PER DIRECTION | burst: 3000 bytes
+UDP probes sent: 10 | delivered: 10 | echo replies: 10
+Left -> right: received=10 forwarded=10 IP-bytes=14280 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=8 packets, max queue delay=334.913 ms
+Right -> left: received=10 forwarded=10 IP-bytes=14280 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=0 packets, max queue delay=0.000 ms
+Elapsed: 0.354 s | average RTT: 148.317 ms | max RTT: 335.019 ms
+Namespace restored: yes | timeout: no | interrupted: no

@@ -1,0 +1,8 @@
+Mode: shape | limit: 256.000 kbit/s PER DIRECTION | burst: 3000 bytes
+UDP probes sent: 100 | delivered: 100 | echo replies: 100
+Left -> right: received=100 forwarded=100 IP-bytes=102800 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=91 packets, max queue delay=2919.788 ms
+Right -> left: received=100 forwarded=100 IP-bytes=102800 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=0 packets, max queue delay=0.000 ms
+Elapsed: 3.119 s | average RTT: 1430.643 ms | max RTT: 2919.875 ms
+Namespace restored: yes | timeout: no | interrupted: no

@@ -1,0 +1,46 @@
+[1/5] Shaping: intact bidirectional delivery, queueing, and rate envelope
+Mode: shape | limit: 256.000 kbit/s PER DIRECTION | burst: 3000 bytes
+UDP probes sent: 40 | delivered: 40 | echo replies: 40
+Left -> right: received=40 forwarded=40 IP-bytes=41120 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=35 packets, max queue delay=1116.169 ms
+Right -> left: received=40 forwarded=40 IP-bytes=41120 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=0 packets, max queue delay=0.000 ms
+Elapsed: 1.195 s | average RTT: 530.835 ms | max RTT: 1116.389 ms
+Namespace restored: yes | timeout: no | interrupted: no
+[2/5] Policing: excess traffic dropped, no queue
+Mode: police | limit: 64.000 kbit/s PER DIRECTION | burst: 3000 bytes
+UDP probes sent: 40 | delivered: 3 | echo replies: 3
+Left -> right: received=40 forwarded=3 IP-bytes=3084 drops=37 [rate=37 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=0 packets, max queue delay=0.000 ms
+Right -> left: received=3 forwarded=3 IP-bytes=3084 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=0 packets, max queue delay=0.000 ms
+Elapsed: 0.380 s | average RTT: 0.219 ms | max RTT: 0.335 ms
+Namespace restored: yes | timeout: no | interrupted: no
+[3/5] Bounded queue: tail drop and eventual drain
+Mode: shape | limit: 64.000 kbit/s PER DIRECTION | burst: 3000 bytes
+UDP probes sent: 40 | delivered: 5 | echo replies: 5
+Left -> right: received=40 forwarded=5 IP-bytes=5140 drops=35 [rate=0 queue=35 oversized=0 io=0 shutdown=0]
+  queue peak=2 packets, max queue delay=257.231 ms
+Right -> left: received=5 forwarded=5 IP-bytes=5140 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=0 packets, max queue delay=0.000 ms
+Elapsed: 0.570 s | average RTT: 79.649 ms | max RTT: 257.425 ms
+Namespace restored: yes | timeout: no | interrupted: no
+[4/5] Deadline: queued traffic accounted as shutdown drops
+Mode: shape | limit: 8.000 kbit/s PER DIRECTION | burst: 3000 bytes
+UDP probes sent: 40 | delivered: 3 | echo replies: 3
+Left -> right: received=40 forwarded=3 IP-bytes=3084 drops=37 [rate=0 queue=0 oversized=0 io=0 shutdown=37]
+  queue peak=38 packets, max queue delay=80.413 ms
+Right -> left: received=3 forwarded=3 IP-bytes=3084 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=0 packets, max queue delay=0.000 ms
+Elapsed: 0.201 s | average RTT: 26.977 ms | max RTT: 80.558 ms
+Namespace restored: yes | timeout: yes | interrupted: no
+[5/5] New run after teardown: low offered load passes unchanged
+Mode: police | limit: 256.000 kbit/s PER DIRECTION | burst: 3000 bytes
+UDP probes sent: 10 | delivered: 10 | echo replies: 10
+Left -> right: received=10 forwarded=10 IP-bytes=10280 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=0 packets, max queue delay=0.000 ms
+Right -> left: received=10 forwarded=10 IP-bytes=10280 drops=0 [rate=0 queue=0 oversized=0 io=0 shutdown=0]
+  queue peak=0 packets, max queue delay=0.000 ms
+Elapsed: 0.450 s | average RTT: 0.186 ms | max RTT: 0.271 ms
+Namespace restored: yes | timeout: no | interrupted: no
+PASS: 5 isolated real-packet scenarios, 65 integration checks

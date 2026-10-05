@@ -1,0 +1,15 @@
+Test project <project>/build-release
+    Start 1: core_tests
+1/5 Test #1: core_tests .......................   Passed    0.01 sec
+    Start 2: cli_help
+2/5 Test #2: cli_help .........................   Passed    0.01 sec
+    Start 3: cli_reject_zero_rate
+3/5 Test #3: cli_reject_zero_rate .............   Passed    0.01 sec
+    Start 4: cli_reject_negative_count
+4/5 Test #4: cli_reject_negative_count ........   Passed    0.01 sec
+    Start 5: cli_reject_nan
+5/5 Test #5: cli_reject_nan ...................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 5
+
+Total Test time (real) =   0.11 sec

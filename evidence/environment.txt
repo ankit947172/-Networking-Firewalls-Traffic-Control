@@ -1,0 +1,16 @@
+Linux 6.6.87.2-microsoft-standard-WSL2
+g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+cmake version 4.2.3
+PRETTY_NAME="Ubuntu 26.04 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04 (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo

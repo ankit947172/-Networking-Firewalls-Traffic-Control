@@ -1,0 +1,22 @@
+{
+  "mode": "shape",
+  "rate_kbps_per_direction": 256.000000,
+  "burst_bytes": 3000,
+  "queue_limit_packets": 256,
+  "requested_packets": 100,
+  "payload_bytes": 1000,
+  "send_pps": 500.000000,
+  "timeout_seconds": 15.000000,
+  "sent": 100, "delivered": 100, "echoed": 100, "replies": 100,
+  "duplicates": 0, "malformed": 0,
+  "ignored_non_ipv4": 2,
+  "elapsed_seconds": 3.118974,
+  "first_delivery_seconds": 0.000055,
+  "last_delivery_seconds": 3.118937,
+  "average_rtt_ms": 1430.642670, "max_rtt_ms": 2919.874718,
+  "timed_out": false,
+  "interrupted": false,
+  "namespace_restored": true,
+  "left_to_right": {"received": 100, "forwarded": 100, "forwarded_bytes": 102800, "rate_drops": 0, "queue_drops": 0, "oversized_drops": 0, "io_drops": 0, "shutdown_drops": 0, "queue_peak": 91, "max_queue_delay_ms": 2919.788094},
+  "right_to_left": {"received": 100, "forwarded": 100, "forwarded_bytes": 102800, "rate_drops": 0, "queue_drops": 0, "oversized_drops": 0, "io_drops": 0, "shutdown_drops": 0, "queue_peak": 0, "max_queue_delay_ms": 0.000000}
+}

@@ -1,0 +1,2 @@
+PASS: Existing interface addresses and IPv4 routes matched before and after the release integration suite in the same Linux session.
+No persistent TUN devices or named namespaces are created by the lab.
